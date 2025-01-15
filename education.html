@@ -1,0 +1,167 @@
+<!-- Document type declaration for XHTML 1.1 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTDxhtml11.dtd">
+
+<!-- Root HTML element with XML namespace and language attributes -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<!-- Head section containing metadata, page title, and styles -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMP2057 Assignment 5 education Page</title>
+    <link rel="stylesheet" href="mycss.css">
+
+    <!-- Inline CSS for basic page styling -->
+    <style>
+        body {
+            font-family: Monaco, monospace;
+        }
+        h1 {
+            color: #FFFFFF;
+        }
+        footer {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: rgba(53, 162, 159, 0.4);
+            color: #FFFFFF;
+            text-align: center; /* Center text in the footer */
+        }
+        footer h2 {
+            margin: 5px 0;
+            font-size: 1.2em;
+        }
+        footer p {
+            font-size: 0.9em;
+        }
+        footer form {
+            display: inline-block; /* Allows centering of the form */
+            text-align: left; /* Align text to the left within the form */
+            margin-top: 5px; /* Space above the form */
+        }
+        footer input[type="text"], footer input[type="email"], footer textarea {
+            width: 100%; /* Make all fields full width */
+            max-width: 350px; /* Set a max width to prevent excessive stretching */
+            margin-bottom: 3px;
+            padding: 4px;
+            display: block;
+            font-size: 0.9em;
+        }
+        footer textarea {
+            height: 80px;
+        }
+        footer input[type="submit"] {
+            background-color: #FFFFFF;
+            color: #333333;
+            border: none;
+            padding: 4px;
+            cursor: pointer;
+            display: block; /* Ensures the button is centered */
+            margin-left: auto; /* Centering effect */
+            margin-right: auto; /* Centering effect */
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<!-- Body of the webpage -->
+<body>
+
+    <!-- Header with title and navigation menu -->
+    <header>
+        <h1>Education</h1>
+        <nav>
+            <ul>
+                <li><a href="mybio.html"><img src="homeicon.png" alt="Home" style="width: 24px; height: 24px;"></a></li>
+                <li><a href="education.html"><img src="educationicon.png" alt="Education" style="width: 24px; height: 24px;"></a></li>
+                <li><a href="work.html"><img src="workicon.png" alt="Work" style="width: 24px; height: 24px;"></a></li>
+                <li><a href="hobbies.html"><img src="hobbiesicon.png" alt="Hobbies" style="width: 24px; height: 24px;"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content area containing educational details -->
+    <main class="content-box">
+        <section>
+            <h2 style="text-align: center;"><b>Academic Background</b></h2>
+            <h3 style="text-align: center;">Let's take a walk through my academic track record</h3>
+            <br>
+
+            <!-- Section for university education details -->
+            <section class="left-aligned">
+                <h3>Bachelor of Computer Science Honours Co-op</h3>
+                <div style="text-align: center;">
+                    <img src="uwinlogo.jpg" width="100" height="100" alt="University of Windsor Logo">
+                </div>   
+                <h4>University of Windsor — Windsor, ON</h4>
+                <h4>Sep 2022 - Present</h4>
+                <h5>Skills: C, Java, Python, SQL</h5>
+                <p><b>Notable Completed Major Courses:</b> Introduction to Algorithms and Programming I & II (C), Computer Architecture I (Digital Design) & II (Micro Programming using Assembly), System Programming (C, UNIX, Bash), Data Structures and Algorithms (Java), Object-Oriented Programming (Java), Artificial Intelligence Concepts (Python), Database Management Systems (SQL)</p>
+                <p><b>Minor in Business Administration Completed Courses:</b> Introduction to Business, Organizational Behaviour</p>
+
+                <br>
+
+                <!-- Section for AI program education details -->
+                <h3>Toronto Cohort Student</h3>
+                <div style="text-align: center;">
+                    <img src="ai4good.jpg" width="200" height="125" alt="AI4Good Lab Logo">
+                </div>  
+                <h4>AI4Good Lab by Mila — Montreal, QC</h4>
+                <h4>May 2023 - Jun 2023</h4>
+                <h5>Skills: Google Colab, Slack, Python, Machine Learning Algorithms, Artificial Intelligence Methods, Pre-processing Data, Jupyter Notebook, Google Map API </h5>    
+                <p>A 2-month long program consisting of 5 weeks to train learning the basics of AI, ML, and its integration with mathematics. Actively participated in lectures, hackathons, and networking events alongside using Google Colab with Python to implement AI algorithms. For the last 3 weeks, collaborated to complete a project called SafeT.First and showcased it at Demo Day, which additionally was awarded the 2023 Toronto Accelerator Award for an exceptionally creative idea and innovation. I subsequently became an application evaluator and mentor for the 2024 cohort.</p>
+
+                <br>
+
+                <!-- Section for high school education details -->
+                <h3>STEM & SHSM</h3>
+                <div style="text-align: center;">
+                    <img src="villy.jpg" width="100" height="100" alt="Villanova Logo">
+                </div>  
+                <h4>St. Thomas of Villanova High School— LaSalle, ON</h4>
+                <h4>Sep 2018 - Jun 2022</h4>
+                <h5>Skills: Python, Pygame, Lego EV Windstorm, Vector Robotics, CPR Certification</h5>    
+                <p>Completed High School Degree achieving honours all 4 years, a STEM (science, technology, engineering and math) course-specialty studied in robotics and mechanics, and graduated with a Special High Skills Major (SHSM) in health & wellness.</p>
+            </section>
+        </section>
+    </main>
+
+    <!-- Footer section with contact form and copyright information -->
+    <footer>
+        <p style="text-align: center; display: inline;">
+            <a href="#top" style="color: blue; background-color: rgba(255, 255, 255, 0.8); padding: 4px; border-radius: 5px;">Back to Top</a>
+        </p>
+
+        <br><br>
+
+        <h2>Let's Get in Touch!</h2>
+        <p>If you have any questions or want to connect, feel free to drop a message!</p>
+        
+        <!-- Contact form with name, email, and message fields -->
+        <form action="mailto:abbruzz2@uwindsor.ca" method="post" enctype="text/plain">
+            <div style="text-align: center;"> <!-- Center the form content -->
+                <div style="display: inline-block; margin-right: 15px;"> <!-- Name container -->
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div style="display: inline-block;"> <!-- Email container -->
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+            <br>
+            <div style="text-align: center;"> <!-- Centering wrapper for the message -->
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="3" required></textarea><br> <!-- Adjusted rows -->
+            </div>
+            <input type="submit" value="Send Message" style="display: block; margin-left: auto; margin-right: auto;"> <!-- Center the submit button -->
+        </form>
+
+        <p style="color: white;">
+            &copy; 2024 Chloe Abbruzzese <br><a href="mailto:abbruzz2@uwindsor.ca" style="color: white;">abbruzz2@uwindsor.ca</a>
+        </p>
+    </footer>
+
+</body>
+</html>
+
+

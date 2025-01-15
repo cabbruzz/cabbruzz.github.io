@@ -1,0 +1,164 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<!-- XML/XHTML boilerplate code -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<!-- Head section for webpage metadata -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COMP2057 Assignment 5 Work Page</title>
+    <link rel="stylesheet" href="mycss.css" />
+    <style>
+        /* Footer Styling */
+        footer {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: rgba(53, 162, 159, 0.4);
+            color: #FFFFFF;
+            text-align: center;
+        }
+        footer h2 {
+            margin: 5px 0;
+            font-size: 1.2em;
+        }
+        footer p {
+            font-size: 0.9em;
+        }
+        footer form {
+            display: inline-block;
+            text-align: left;
+            margin-top: 5px;
+        }
+        footer input[type="text"], footer input[type="email"], footer textarea {
+            width: 100%;
+            max-width: 350px;
+            margin-bottom: 3px;
+            padding: 4px;
+            font-size: 0.9em;
+        }
+        footer textarea {
+            height: 80px;
+        }
+        footer input[type="submit"] {
+            background-color: #FFFFFF;
+            color: #333333;
+            border: none;
+            padding: 4px;
+            cursor: pointer;
+            margin: 5px auto;
+            font-size: 0.9em;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+
+        <h1>Work Experience</h1>
+        <nav>
+            <ul>
+                <li><a href="mybio.html"><img src="homeicon.png" alt="Home" style="width: 24px; height: 24px;" /></a></li>
+                <li><a href="education.html"><img src="educationicon.png" alt="Education" style="width: 24px; height: 24px;" /></a></li>
+                <li><a href="work.html"><img src="workicon.png" alt="Work" style="width: 24px; height: 24px;" /></a></li>
+                <li><a href="hobbies.html"><img src="hobbiesicon.png" alt="Hobbies" style="width: 24px; height: 24px;" /></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="content-box">
+        <section>
+            <h2>My Work History</h2>
+            <table>
+                <tr>
+                    <th>Company</th>
+                    <th>Role</th>
+                    <th>Duration</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>City of Windsor<br /><br />Windsor, ON</td>
+                    <td>Engineering Transportation Planning Co-Op</td>
+                    <td>May 2024 - Aug 2024</td>
+                    <td>
+                        <ul>
+                            <li>Analyzed volumetric route data using StreetLight InSight software for peak areas in Windsor.</li>
+                            <li>Collected vehicular lane widths using EIS software for a council report on street expansion.</li>
+                            <li>Conducted on-site transportation data collection for real-time traffic volumes.</li>
+                            <li>Engaged with citizens at events like Bike To Work Day to promote alternative transportation.</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>JNM Tool & Manufacturing Inc./Windsor Metal Technology<br /><br />Windsor, ON</td>
+                    <td>Summer Assistant</td>
+                    <td>Jul 2022 - August 2022</td>
+                    <td>
+                        <ul>
+                            <li>Assisted the accounting team, managing various roles across departments.</li>
+                            <li>Handled independent projects with a focus on cataloguing company transactions.</li>
+                            <li>Proficient in Microsoft Office Suite for creating and formatting reports.</li>
+                            <li>Mentored in IT, learning web setup, security, and internal system creation.</li>
+                        </ul>
+                    </td>
+                </tr>
+
+            </table>
+
+            <h2>My Projects</h2>
+            <table>
+                <tr>
+                    <th>Project</th>
+                    <th>Skills</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>SafeT.First<br /><br />Montreal, QC</td>
+                    <td>Google API, KNN Algorithm, Python, Figma</td>
+                    <td>Developed a machine learning application using KNN to analyze real-time crime data, designed with Figma. Won the 2023 Toronto Accelerator Award and set for publication by Mila.</td>
+                </tr>
+            </table>
+
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p style="text-align: center;">
+            <a href="#top" style="color: blue; background-color: rgba(255, 255, 255, 0.8); padding: 4px; border-radius: 5px;">Back to Top</a>
+        </p>
+        <br /><br />
+        <h2>Let's Get in Touch!</h2>
+        <p>If you have any questions or want to connect, feel free to drop a message!</p>
+        <form action="mailto:abbruzz2@uwindsor.ca" method="post" enctype="text/plain">
+            <div style="text-align: center;">
+                <div style="display: inline-block; margin-right: 15px;">
+                    <label for="name">Name:</label><br />
+                    <input type="text" id="name" name="name" required />
+                </div>
+                <div style="display: inline-block;">
+                    <label for="email">Email:</label><br />
+                    <input type="email" id="email" name="email" required />
+                </div>
+            </div>
+            <br />
+            <div style="text-align: center;">
+                <label for="message">Message:</label><br />
+                <textarea id="message" name="message" rows="3" required></textarea><br />
+            </div>
+            <input type="submit" value="Send Message" style="margin: 5px auto;" />
+        </form>
+        <p style="color: white;">
+            &copy; 2024 Chloe Abbruzzese<br />
+            <a href="mailto:abbruzz2@uwindsor.ca" style="color: white;">abbruzz2@uwindsor.ca</a>
+        </p>
+    </footer>
+</body>
+</html>
