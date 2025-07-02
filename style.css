@@ -1,5 +1,6 @@
 /* Root variables */
 :root{
+    --background-color: #B5CFD8; /* Light Blue */
     --text-color: #6C737E; /* Dark gray */
     --link-color: #EBECF1; /* Light gray */
 }
@@ -29,7 +30,7 @@ body{
 
 /* Nav bar styling */
 nav{
-    background-color: #B5CFD8;
+    background-color: var(--background-color);
     color: var(--text-color);
     text-decoration: none;
     display: flex;
@@ -69,8 +70,14 @@ nav .right a:hover{
 /* Left side of nav bar styling (title) */
 nav .left a{
     text-align: left;
-    font-size: 2.0rem;
-    font-weight: 800;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Hover effect for right nav bar links */
+nav .left a:hover{
+    color: var(--link-color);
+    transition: color 0.3s ease-in-out;
 }
 
 
@@ -91,6 +98,27 @@ section{
 /* Section headings styling */
 section h2{
     color: var(--text-color);
+    position: relative;
+}
+
+
+/* Bar under headings styling */
+section h2::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background-color: var(--background-color);
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+
+/* About section background styling */
+#about-section{
+    background-color: var(--link-color); 
 }
 
 
