@@ -1,24 +1,33 @@
+/* Root variables */
 :root{
     --text-color: #6C737E; /* Dark gray */
     --link-color: #EBECF1; /* Light gray */
 }
 
+
+/* Reset default styles */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+/* Global styling */
 html{
     scroll-behavior: smooth;
     scroll-padding-top: 17rem; 
 }
 
+
+/* Body styling */
 body{
     font-family: 'Courier New', Courier, monospace;
     padding-top: 5rem;
 }
 
+
+/* Nav bar styling */
 nav{
     background-color: #B5CFD8;
     color: var(--text-color);
@@ -34,28 +43,38 @@ nav{
     z-index: 1000;
 }
 
+
+/* Nav bar links styling */
 nav a{
     text-decoration: none;
     color: var(--text-color);
 }
 
+
+/* Right side of nav bar styling (links) */
 nav .right{
     display: flex;
     gap: 2rem;
     align-items: center;
 }
 
+
+/* Hover effect for right nav bar links */
 nav .right a:hover{
     color: var(--link-color);
     transition: color 0.3s ease-in-out;
 }
 
+
+/* Left side of nav bar styling (title) */
 nav .left a{
     text-align: left;
     font-size: 2.0rem;
     font-weight: 800;
 }
 
+
+/* Section styling for main content */
 section{
     align-items: center;
     text-align: center;
@@ -68,10 +87,14 @@ section{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
+
+/* Section headings styling */
 section h2{
     color: var(--text-color);
 }
 
+
+/* About section headshot image styling */
 #about-section .headshot img{
     width: 300px;
     height: 300px;
@@ -80,17 +103,22 @@ section h2{
     transition: transform 0.3s ease;
 }
 
+
+/* Headshot hover effect */
 #about-section .headshot img:hover{
     transform: scale(1.2);
 }
 
 
-/* Responsive Design */
+/* Responsive design for mobile/collapsed screens */
 @media (max-width: 768px){
+
+    /* Increase top padding */
     body{
         padding-top: 18rem;
     }
 
+    /* Stack nav items vertically */
     nav{
         flex-direction: column;
         height: auto;
@@ -99,6 +127,7 @@ section h2{
         text-decoration: none;
     }
 
+    /* Center and adjust site title */
     nav .left{
         text-align: center;
         font-size: 2.0rem;
@@ -107,6 +136,7 @@ section h2{
         margin-bottom: 0.5rem;
     }
 
+    /* Stack nav links vertically */
     nav .right{
         display: flex;
         flex-direction: column;
@@ -115,6 +145,7 @@ section h2{
         gap: 0.5rem;
     }
 
+    /* Made headshot smaller */
     #about-section .headshot{
         width: 12rem;
         height: 12rem;
