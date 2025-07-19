@@ -130,7 +130,6 @@ section h2::after{
     transition: transform 0.3s ease;
 }
 
-
 /* Headshot hover effect */
 #about-section .headshot img:hover{
     transform: scale(1.10);
@@ -148,18 +147,19 @@ section h2::after{
     margin: 0 0.75rem;
 }
 
-/* comment */
+/* Icon colour and size */
 #about-section .socials a i {
     color: var(--background-color);
     transition: transform 0.3s, color 0.3s;
     font-weight: 500;
 }
 
-/* comment */
+/* Hover colour and transform behaviour */
 #about-section .socials a:hover i {
     color: var(--text-color);
     transform: scale(1.2);
 }
+
 
 /* Responsive design for mobile/collapsed screens */
 @media (max-width: 768px){
