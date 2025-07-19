@@ -121,7 +121,6 @@ section h2::after{
     background-color: var(--link-color); 
 }
 
-
 /* About section headshot image styling */
 #about-section .headshot img{
     width: 300px;
